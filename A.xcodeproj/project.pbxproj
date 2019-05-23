@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06EA1924E6FA93F757E9477E /* Pods_A.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF4892941B7C210DAC15A47 /* Pods_A.framework */; };
 		10BE070D2296AD2D00E13276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE070C2296AD2D00E13276 /* AppDelegate.m */; };
 		10BE07102296AD2D00E13276 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BE070F2296AD2D00E13276 /* ViewController.m */; };
 		10BE07132296AD2D00E13276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BE07112296AD2D00E13276 /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 		10BE071A2296AD2E00E13276 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10BE07212296AD5400E13276 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AViewController.h; path = A/AViewController.h; sourceTree = "<group>"; };
 		10BE07222296AD5400E13276 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AViewController.m; path = A/AViewController.m; sourceTree = "<group>"; };
+		7FE05667C23A72E64C7B1439 /* Pods-A.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A.release.xcconfig"; path = "Target Support Files/Pods-A/Pods-A.release.xcconfig"; sourceTree = "<group>"; };
+		CCF4892941B7C210DAC15A47 /* Pods_A.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB1C3C2B6FF103ED2B47BB6 /* Pods-A.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A.debug.xcconfig"; path = "Target Support Files/Pods-A/Pods-A.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06EA1924E6FA93F757E9477E /* Pods_A.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				10BE070A2296AD2D00E13276 /* A */,
 				10BE07092296AD2D00E13276 /* Products */,
+				3F0316257CDCBDDFEAC9C1B2 /* Pods */,
+				369562B3A469BBA30D2F6A7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = A;
 			sourceTree = "<group>";
 		};
+		369562B3A469BBA30D2F6A7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCF4892941B7C210DAC15A47 /* Pods_A.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F0316257CDCBDDFEAC9C1B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDB1C3C2B6FF103ED2B47BB6 /* Pods-A.debug.xcconfig */,
+				7FE05667C23A72E64C7B1439 /* Pods-A.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BE071E2296AD2E00E13276 /* Build configuration list for PBXNativeTarget "A" */;
 			buildPhases = (
+				DB2139F4E52181C083C6911B /* [CP] Check Pods Manifest.lock */,
 				10BE07042296AD2D00E13276 /* Sources */,
 				10BE07052296AD2D00E13276 /* Frameworks */,
 				10BE07062296AD2D00E13276 /* Resources */,
+				8084525BA8F20FDFAAC33D01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8084525BA8F20FDFAAC33D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A/Pods-A-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A/Pods-A-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-A/Pods-A-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB2139F4E52181C083C6911B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10BE07042296AD2D00E13276 /* Sources */ = {
@@ -289,6 +358,7 @@
 		};
 		10BE071F2296AD2E00E13276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB1C3C2B6FF103ED2B47BB6 /* Pods-A.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +377,7 @@
 		};
 		10BE07202296AD2E00E13276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE05667C23A72E64C7B1439 /* Pods-A.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
